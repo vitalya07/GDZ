@@ -1,0 +1,382 @@
+@media(max-width: 1250px) {
+    .body__container {
+        height: 1004px;
+    }
+    .container {
+        max-width: 1100px;
+    }
+    .header {
+        &__logo {
+            align-items: center;
+            gap: 10px;
+            &-text {
+                font-size: 25px;
+            }
+            &-img {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        &__menu {
+            &-time {
+                width: 25px;
+                height: 25px;
+            }
+            &-setting {
+                width: 25px;
+                height: 25px;
+            }
+            &-crystal {
+                width: 75.25px;
+                height: 31.92px;
+            }
+        }
+    }
+    .about {
+        &__photo {
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        &__info {
+            &-title {
+                font-size: 44px;
+                &::before {
+                    max-width: 468px;
+                    font-size: 42px;
+                }
+            }
+            &__well {
+                left: 395px;
+                top: 58px;
+                width: 166.06px;
+                height: 49.52px;
+            }
+        }
+        &__started {
+            width: 406.22px;
+            height: 74.01px;
+            &-icon {
+                width: 61px;
+                height: 43px;
+            }
+            &-start {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media(max-width: 1100px) {
+    .container {
+        max-width: 993px;
+    }
+    .about {       
+        &__info {
+            &-title {
+                font-size: 35px;
+                &::before {
+                    max-width: 468px;
+                    font-size: 35px;
+                }
+            }
+            &__well {
+                left: 270px;               
+            }
+        }
+        &__started {
+            width: 406.22px;
+            height: 74.01px;
+            &-icon {
+                width: 61px;
+                height: 43px;
+            }
+            &-start {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media(max-width: 993px) {
+    .container {
+        max-width: 769px;
+    }
+    .header {
+        &__wrapper {
+            justify-content: space-around;
+        }
+        &__logo {
+            align-items: center;
+            gap: 10px;
+            &-text {
+                font-size: 20px;
+                text-shadow: 
+                -1px -1px 0 #7431D9,  
+                1px -1px 0 #7431D9,
+                -1px 1px 0 #7431D9,
+                1px 1px 0 #7431D9;
+            }
+            &-img {
+                height: 30px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        &__menu {
+            &-time {
+                width: 25px;
+                height: 25px;
+            }
+            &-setting {
+                width: 25px;
+                height: 25px;
+            }
+            &-crystal {
+                width: 75.25px;
+                height: 31.92px;
+            }
+        }
+    }
+    .about { 
+        &__courses-name {
+            display: block;
+            margin: 20px auto;
+        }
+        &__wrapper {
+            flex-direction: column;
+        } 
+        &__great {
+            margin: 0 auto;
+            justify-content: center;
+            flex-direction: row;
+        }     
+        &__info {
+            &-gdz {
+                display: block;
+                margin-top:20px;
+            }
+            &-title {
+                display: none;
+                font-size: 35px;
+                &::before {
+                    max-width: 468px;
+                    font-size: 35px;
+                }
+            }
+            &__well {
+                display: none;
+                left: 270px;               
+            }
+        }
+        &__center {
+            margin: 10px auto 0 auto;
+        }
+        &__tutor {
+            margin-top: 20px;
+        }
+        &__started {
+            bottom: 6px;
+            left: 40px;
+            width: 406.22px;
+            height: 74.01px;
+            background-color: rgba(45, 73, 221, 82%);
+    
+            &-icon {
+                width: 61px;
+                height: 43px;
+            }
+            &-start {
+                font-size: 18px;
+            }
+        }
+        &__courses {
+            margin: 0 auto;
+        }
+        &__box {
+            margin: 20px auto;
+            flex-direction: row;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            flex-wrap: wrap;
+            height: 280px;
+            width: 220px;
+            display: flex;
+            &-title {
+                line-height: 16px;
+            }
+            &-title {
+                display: flex;
+            }
+            &-file {
+                width: 190px;
+                display: flex;
+                line-height: 10px;
+                margin: 10px  auto;
+            }
+        }
+        &__feedback {
+            display: none;
+        }
+        
+    }
+}
+@media(max-width: 763px) {
+    .body__container {
+        height: 100%;
+        background: #3b3041
+    }
+    .container {
+        max-width: 563px;
+    }
+    .header {
+        padding: 15px 0;
+        background-color: #222021;
+    }
+    .about {
+        padding: 12px;
+        &__info {
+            &-gdz {
+                text-align: left;
+            }
+        }
+        &__great {
+            gap: 10px;
+        }
+        &__photo {
+            img {
+                width: 56px;
+                height: 56px;
+            }
+        }
+        &__started {
+            bottom: 6px;
+            left: 15px;
+            width: 302.61px;
+            height: 57.1px;       
+            background-color: rgba(45, 73, 221, 82%);    
+            &-icon {
+                width: 61px;
+                height: 43px;
+            }
+            &-start {
+                font-size: 18px;
+            }
+            &-arrow {
+                margin-left: 50px;
+                img {
+                    width: 40px;
+                    height: 10px;
+                }
+            }
+            &-smile {
+                top: 18px;
+                &--icon {
+                    width: 42.73px;
+                    height: 21.84px;
+                    font-size: 10px;
+                    line-height: 13px;
+                }
+            }
+        }
+        &__box {
+            flex-direction: column;
+        }
+        &__item  {
+            flex-wrap: nowrap;
+            width: 312.2px;
+            height: 119.48px;
+            display: flex;
+            z-index: 10;
+            &-img {
+                img {
+                    width: 74.52px;
+                    height: 107.92px;                   
+                    border-radius: 24px;                    
+                }
+            }
+            &-title {
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 14.63px;
+                letter-spacing: -0.02em;
+                text-align: left;
+            }
+            &-hashtag {
+                font-family: Montserrat;
+                font-size: 11px;
+                font-weight: 600;
+                line-height: 13.41px;
+                letter-spacing: -0.02em;
+                text-align: left;
+            }
+            &-file {
+                width: 219.49px;
+                height: 43.35px;
+                border-radius: 11px;
+                border: 1px;
+            }
+        }
+    }
+}
+@media(max-width: 556px) {
+    .container {
+        max-width: 360px;
+        padding: 10px;
+    }
+    .header {
+        &__wrapper {
+            justify-content: space-between;
+        }
+        &__logo {
+            width: 59.37px;
+            height: 20px;
+            &-text {
+                font-size: 16px;
+            }
+            &-img {
+                width: 8px;
+                height: 25px;
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+        &__menu {
+            gap: 5px;
+            &-time {
+                width: 18px;
+                height: 18px;
+            }
+            &-setting {
+                width: 18px;
+                height: 18px;
+            }
+            &-crystal {
+                width: 46.83px;
+                height: 20.45px;
+                
+                img {
+                    width: 13.61px;
+                    height: 13.61px;                  
+                }
+                &--text {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .about {
+        &__center {
+            justify-content: flex-start;
+            align-items: flex-start
+        }
+    }
+}
