@@ -1,0 +1,49 @@
+.popup__stories {
+    background: #0F0C15A8;
+    position: fixed;
+    z-index: 22;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s;
+    &-box {
+        background: #353130E8;
+        width: 689px;
+        height: 672px;
+        border-radius: 32px;
+        scale: 0;
+        transition: scale .6s;
+    }
+    &-header {
+        background: #222021ED;
+        display: flex;
+        border-radius: 32px 32px 0 0;
+        padding: 15.66px 0 15.66px 32.05px;
+        gap: 142.15px;
+    }
+    &-back {
+        width: 90.56px;
+        height: 48.61px;
+        border-radius: 8px;
+    }
+    &-title {
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39.01px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #FAFAFA;
+    }
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        .popup__stories-box {
+            scale: 1;
+        }
+    }
+}

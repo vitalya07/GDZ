@@ -4,10 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="body__container">
+        <div class="popup__stories">
+            <div class="popup__stories-box">
+                <div class="popup__stories-header">
+                    <div class="popup__stories-back">
+                        <img src="icons/arrow-back2.png" alt="Стрелка выхода из историй">
+                    </div>
+                    <h4 class="popup__stories-title">
+                        История
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="popup__setting">
+            <div class="popup__setting-box">
+                <div class="popup__setting-header">
+                    <div class="popup__setting-back">
+                        <img src="icons/arrow-back2.png" alt="Стрелка назад">
+                    </div>
+                    <h4 class="popup__setting-title">Настройки</h4>
+                </div>
+                <div class="popup__setting-main">
+                    <p class="popup__setting-subtitle">Еще</p>
+                    <div class="popup__setting-item popup__setting-item--1">
+                        <div class="popup__setting-icon">
+                            <img src="icons/main.png" alt="Личный кабинет">
+                        </div>
+                        <h5 class="popup__setting-name">Личный кабинет</h5>
+                    </div>
+                    
+                    <div class="popup__setting-item">
+                        <div class="popup__setting-icon">
+                            <img src="icons/friend.png" alt="Пригласить друга">
+                        </div>
+                        <h5 class="popup__setting-name">Поделиться с друзьями</h5>
+                    </div>
+                        
+                    <div class="popup__setting-item">
+                        <div class="popup__setting-icon">
+                            <img src="icons/star.png" alt="Личный кабинет">
+                        </div>
+                        <h5 class="popup__setting-name">Оценить  GDZ-II</h5>
+                    </div>
+
+                    <div class="popup__setting-item popup__setting-item--last">
+                        <div class="popup__setting-icon">
+                            <img src="icons/support.png" alt="Личный кабинет">
+                        </div>
+                        <h5 class="popup__setting-name">Техподдержка</h5>
+                    </div>
+                    <p class="popup__setting-subtitle popup__setting-other">Прочее</p>
+                    <div class="popup__setting-item popup__setting-item--1">
+                        <div class="popup__setting-icon">
+                            <img src="icons/conditions.png" alt="Личный кабинет">
+                        </div>
+                        <h5 class="popup__setting-name">Условие использования</h5>
+                    </div>     
+                    
+                    <div class="popup__setting-item popup__setting-item--last">
+                        <div class="popup__setting-icon">
+                            <img src="icons/policy.png" alt="Личный кабинет">
+                        </div>
+                        <h5 class="popup__setting-name">Политика конфедицыальности</h5>
+                    </div>                       
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="popup__crystal">
+            <div class="popup__crystal-box">
+                <div class="popup__crystal-return" id="crystal-return">
+                    <img src="icons/arrow-back.png" alt="стрелка выхода назад">
+                </div> 
+                <div class="popup__crystal-img">
+                    <img src="img/crystal.jpg " alt="Кристал">
+                </div>
+                <div class="popup__crystal-info">
+                    <h3 class="popup__crystal-title">Кристаллы</h3>
+                    <p class="popup__crystal-subtitle">1 Вопрос = 1 Кристалл</p>
+                    <p class="popup__crystal-descr">GDZ-II  ваш надежный помощник в учебе!</p>
+                    <ul class="popup__crystal-lists">** Как задать вопрос?  ** 
+                        <li class="popup__crystal-item">- **Вариант 1:** Напишите вопрос в поле для текст</li>   
+                        <li class="popup__crystal-item">- **Вариант 2:** Сделайте фото и загрузите в чат</li>                     
+                    </ul> 
+                    <p class="popup__crystal-explain">Решим задание  и объясним решение</p>
+                    <div class="popup__crystal-buttons">
+                        <a href="#" class="popup__crystal-button">25 <span>Кристаллов 
+                            за</span> 299₽
+                        </a>
+                        <a href="#" class="popup__crystal-button">50 <span>Кристаллов 
+                            за</span> 499₽
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
@@ -39,18 +135,23 @@
                         <div class="about__great">
                             <a href="#" class="about__photo">
                                 <img src="img/darvin.png" alt="Дарвин">
+                                Darwin
                             </a>
                             <a href="#" class="about__photo">
                                 <img src="img/Enshtein.png" alt="Энштейн">
+                                Einstein
                             </a>
                             <a href="#" class="about__photo">
                                 <img src="img/Newton.png" alt="Ньютон">
+                                Newton
                             </a>
                             <a href="#" class="about__photo">
                                 <img src="img/picaso.png" alt="Пикасо">
+                                Picasso
                             </a>
                             <a href="#" class="about__photo">
                                 <img src="img/Pushkin.png" alt="Пушкин">
+                                Pushkin
                             </a>
                         </div>
                         <div class="about__center">
@@ -159,7 +260,7 @@
                                     </div
                                 </div>
                             </div>
-                            </div>
+                            <!-- </div> -->
 
                         </div>
                     </div>                   

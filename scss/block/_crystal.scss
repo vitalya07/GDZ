@@ -1,0 +1,104 @@
+.popup__crystal {
+    background-color:#0F0C15A8;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .4s;
+    &-box {
+        position: relative;
+        background: #FFFFFFE8;
+        padding: 0 0 32.5px 0;
+        scale: 0;
+        transition: scale .6s;
+    }
+    &-return {
+        position: absolute;
+        width: 90.56px;
+        height: 48.61px;
+        top: 15.66px;
+        left: 32.05px;
+        gap: 0px;
+        border-radius: 8px;
+        opacity: 0px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-info {
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24.38px;
+    }
+    &-title {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+        color: #000000;
+        margin-top: 27.45px;
+    }
+    &-subtitle {
+        margin-top: 7.2px;
+    }
+    &-descr {
+        margin-top: 7.2px;
+    }
+    &-lists {
+        list-style: none;
+        margin-top: 15.28px;
+    }
+    &-explain {
+        margin-top: 13.2px;
+    }
+    &-buttons {
+        margin-top: 23.2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 47.07px;
+    }
+    &-button {
+        text-decoration: none;
+        width: 249.06px;
+        height: 53.87px;
+        border-radius: 9px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.38px;
+        text-align: center;
+        color: #fff;
+        background: #7236CF;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        padding: 4.24px 44.53px;
+        transition: all .6s;
+        span {
+            font-weight: 500;
+        }
+        &:hover {
+            background: #864fd8;
+            box-shadow: 0 0 15px #864fd8;
+        }
+    }
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        .popup__crystal-box {
+            scale: 1;
+        }       
+    }   
+}
+

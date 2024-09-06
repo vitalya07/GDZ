@@ -1,5 +1,4 @@
-.about {
-   
+.about {   
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -11,6 +10,17 @@
         justify-content: center;
         align-items: start;
         gap: 24px;
+    }
+    &__photo {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        text-align: center;
+        color: #fff;
     }
     &__center {
         max-width: 769px;  
