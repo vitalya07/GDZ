@@ -16,7 +16,7 @@
         height: 672px;
         border-radius: 32px;
         scale: 0;
-        transition: scale .6s;
+        transition: scale .6s;        
     }
     &-header {
         background: #222021ED;
@@ -34,8 +34,7 @@
             height: 100%;
             object-fit: cover;
             cursor: pointer;
-        }
-        
+        }        
     }
     &-title {
         font-family: Montserrat;
@@ -66,6 +65,10 @@
         color: #fff;      
         margin-left: 20px;  
     }
+    &-item--color {
+        display: none;
+        border-radius: 0 0 20px 20px;
+    }
     &-item--1 {
         border-radius: 20px 20px 0 0;
     }
@@ -73,6 +76,7 @@
         border-radius: 0 0 20px 20px;
     }
     &-item {
+        position: relative;
         width: 595.47px;
         height: 66.27px;
         background: #222021ED;
@@ -85,6 +89,10 @@
         cursor: pointer;
         &:hover {
             background: #272626ed;
+        }
+        &--color {
+            display: none;
+            border-radius: 0 0 20px 20px;
         }
     } 
     &-icon {

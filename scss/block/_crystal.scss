@@ -7,9 +7,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     visibility: hidden;
     opacity: 0;
     transition: visibility .4s, opacity .4s;
+    &-trait {
+        width: 48.53px;
+        height: 6px;
+        display: none;
+        // top: 308.18px;
+        // left: 155.74px;
+        border-radius: 22px;
+        background-color: #D8E9F98C;
+        margin: 0 auto;
+    }
     &-box {
         position: relative;
         background: #FFFFFFE8;

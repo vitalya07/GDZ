@@ -8,7 +8,102 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="body__container">
+    <div class="body__container">   
+        <div class="theme">
+            <div class="theme__box">
+                <div class="theme__header">
+                    <div class="theme__back">
+                        <img src="icons/arrow-back2.png" alt="Стрелка назад">
+                    </div>
+                    <h4 class="theme__title">Выбор темы</h4>
+
+                </div>
+            </div>    
+        </div>
+        <div class="policy" id="policy">
+            <div class="policy__box">
+                <div class="policy__header">
+                    <div class="policy__back">
+                        <img src="icons/arrow-back2.png" alt="Стрелка назад">
+                    </div>
+                    <h4 class="policy__title">Политика конфедицыальности</h4>
+                </div>
+            </div>      
+        </div>      
+        <div class="conditions" id="conditions">
+            <div class="conditions__box">
+                <div class="conditions__header">
+                    <div class="conditions__back">
+                        <img src="icons/arrow-back2.png" alt="Стрелка назад">
+                    </div>
+                    <h4 class="conditions__title">Условие использования</h4>
+                </div>
+            </div>      
+        </div>     
+        <div class="appraisal" id="appraisal">
+            <div class="appraisal__box">
+                <div class="appraisal__header">
+                    <div class="appraisal__back">
+                        <img src="icons/arrow-back2.png" alt="Стрелка назад">
+                    </div>
+                    <h4 class="appraisal__title">Оценить  GDZ-II</h4>
+                </div>
+                <div class="appraisal__main">
+                    <div class="appraisal__rating">
+                        <img class="appraisal__star" data-value="1" src="icons/star-white.png" alt="1 звезда">
+                        <img class="appraisal__star" data-value="2" src="icons/star-white.png" alt="2 звезды">
+                        <img class="appraisal__star" data-value="3" src="icons/star-white.png" alt="3 звезды">
+                        <img class="appraisal__star" data-value="4" src="icons/star-white.png" alt="4 звезды">
+                        <img class="appraisal__star" data-value="5" src="icons/star-white.png" alt="5 звёзд">
+                    </div>
+                    <button class="appraisal__btn">Оценить</button>
+                </div>
+            </div>      
+        </div>
+        <div class="office" id="office">
+            <div class="office__box">
+                <div class="office__header">
+                    <div class="office__back">
+                        <img src="icons/arrow-back2.png" alt="Стрелка назад">
+                    </div>
+                    <h4 class="office__title">Личный кабинет</h4>
+                </div>
+                <div class="office__main">
+                    <div class="office__main-icon">
+                        <img src="icons/bigmain.png" alt="личный кабинет">
+                    </div>
+                    <div class="greeting"></div>
+                    <form action="#" class="office__form" id="form">
+                        <div>
+                            <input type="name" name="name" id="office-name" class="office__input" placeholder="Имя" required>
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="office-email" class="office__input" placeholder="E-mail" required>
+                        </div>
+                        <button class="office__btn" id="register-button">Зарегистрироваться</button>
+                        <a href="#" class="office__recovery">Восстановить учетную запись</a>
+                    </form>
+                </div>
+            </div>            
+        </div>   
+        <div class="friends" id="friends">
+            <div class="friends__box">
+                <div class="friends__header">
+                    <div class="friends__back">
+                        <img src="icons/arrow-back2.png" alt="Стрелка назад">
+                    </div>
+                    <h4 class="friends__title">Поделиться с друзьями</h4>
+                </div>
+                <div class="friends__main">
+                    <form action="#" class="friends__form" id="form">
+                        <div>
+                            <input type="name" name="name" id="friends-name" class="friends__input" placeholder="ссылка" required>
+                        </div>            
+                        <button class="friends__btn" type="submit">Скопировать</button>
+                    </form>
+                </div>
+            </div>            
+        </div> 
         <div class="popup__stories">
             <div class="popup__stories-box">
                 <div class="popup__stories-header">
@@ -20,9 +115,9 @@
                     </h4>
                 </div>
             </div>
-        </div>
-        <div class="popup__setting">
-            <div class="popup__setting-box">
+        </div>          
+        <div class="popup__setting">            
+            <div class="popup__setting-box">                 
                 <div class="popup__setting-header">
                     <div class="popup__setting-back">
                         <img src="icons/arrow-back2.png" alt="Стрелка назад">
@@ -31,21 +126,21 @@
                 </div>
                 <div class="popup__setting-main">
                     <p class="popup__setting-subtitle">Еще</p>
-                    <div class="popup__setting-item popup__setting-item--1">
+                    <div class="popup__setting-item popup__setting-item--1 myoffice" id="myoffice">                       
                         <div class="popup__setting-icon">
                             <img src="icons/main.png" alt="Личный кабинет">
                         </div>
                         <h5 class="popup__setting-name">Личный кабинет</h5>
                     </div>
                     
-                    <div class="popup__setting-item">
+                    <div class="popup__setting-item" id="myFriends">
                         <div class="popup__setting-icon">
                             <img src="icons/friend.png" alt="Пригласить друга">
                         </div>
                         <h5 class="popup__setting-name">Поделиться с друзьями</h5>
                     </div>
                         
-                    <div class="popup__setting-item">
+                    <div class="popup__setting-item" id="my-appraisal">
                         <div class="popup__setting-icon">
                             <img src="icons/star.png" alt="Личный кабинет">
                         </div>
@@ -58,15 +153,21 @@
                         </div>
                         <h5 class="popup__setting-name">Техподдержка</h5>
                     </div>
+                    <div class="popup__setting-item popup__setting-item--color">
+                        <div class="popup__setting-icon">
+                            <img src="icons/color.png" alt="Смена цвета">
+                        </div>
+                        <h5 class="popup__setting-name">Выбор темы</h5>
+                    </div>
                     <p class="popup__setting-subtitle popup__setting-other">Прочее</p>
-                    <div class="popup__setting-item popup__setting-item--1">
+                    <div class="popup__setting-item popup__setting-item--1" id="my-conditions">
                         <div class="popup__setting-icon">
                             <img src="icons/conditions.png" alt="Личный кабинет">
                         </div>
                         <h5 class="popup__setting-name">Условие использования</h5>
                     </div>     
                     
-                    <div class="popup__setting-item popup__setting-item--last">
+                    <div class="popup__setting-item popup__setting-item--last" id="my-policy">
                         <div class="popup__setting-icon">
                             <img src="icons/policy.png" alt="Личный кабинет">
                         </div>
@@ -74,10 +175,10 @@
                     </div>                       
                 </div>
             </div>
-            <!-- </div> -->
         </div>
         <div class="popup__crystal">
-            <div class="popup__crystal-box">
+            <div class="popup__crystal-trait"></div>
+            <div class="popup__crystal-box">                
                 <div class="popup__crystal-return" id="crystal-return">
                     <img src="icons/arrow-back.png" alt="стрелка выхода назад">
                 </div> 
