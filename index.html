@@ -8,15 +8,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="body__container">   
-        <div class="theme">
+    <div class="body__container" id="body-container">   
+        <div class="theme" id="theme">
             <div class="theme__box">
                 <div class="theme__header">
                     <div class="theme__back">
                         <img src="icons/arrow-back2.png" alt="Стрелка назад">
                     </div>
-                    <h4 class="theme__title">Выбор темы</h4>
-
+                    <h4 class="theme__title">Выбор темы</h4>                    
+                </div>
+                <div class="theme__main">
+                    <div class="theme__item">
+                        <div class="theme__item-icon">
+                            <img src="icons/sun.png" alt="Солнышко">
+                        </div>
+                        <div class="theme__item-text">Светлая</div>
+                        <div class="theme__item-border" id="lightTheme"></div>
+                    </div>
+                    <div class="theme__item">
+                        <div class="theme__item-icon">
+                            <img src="icons/moon.png" alt="Луна">
+                        </div>
+                        <div class="theme__item-text">Темная</div>
+                        <div class="theme__item-border active" id="darkTheme"></div>
+                    </div>
                 </div>
             </div>    
         </div>
@@ -153,7 +168,7 @@
                         </div>
                         <h5 class="popup__setting-name">Техподдержка</h5>
                     </div>
-                    <div class="popup__setting-item popup__setting-item--color">
+                    <div class="popup__setting-item popup__setting-item--color" id="my-theme">
                         <div class="popup__setting-icon">
                             <img src="icons/color.png" alt="Смена цвета">
                         </div>
@@ -205,13 +220,14 @@
                 </div>
             </div>
         </div>
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__wrapper">
                     <div class="header__logo">
-                        <a href="#" class="header__logo-text">GDZ</a>
+                        <a href="#" class="header__logo-text" id="header-logo-text">GDZ</a>
                         <a href="#" class="header__logo-img">
-                            <img src="icons/pause.png" alt="Кнопка паузы">
+                            <img src="icons/pause.png" alt="Кнопка паузы" id="logo">
+                            <img src="icons/pauselight.png" alt="Кнопка паузы" id="logo-light">
                         </a>
                     </div>
                     <div class="header__menu">
@@ -236,7 +252,7 @@
                         <div class="about__great">
                             <a href="#" class="about__photo">
                                 <img src="img/darvin.png" alt="Дарвин">
-                                Darwin
+                                spanDarwin
                             </a>
                             <a href="#" class="about__photo">
                                 <img src="img/Enshtein.png" alt="Энштейн">
@@ -257,7 +273,7 @@
                         </div>
                         <div class="about__center">
                             <div class="about__info">
-                                <h1 class="about__info-gdz">GDZ - решебник</h1>
+                                <h1 class="about__info-gdz" id="gdz-color">GDZ - решебник</h1>
                                 <h1 class="about__info-title">Готовые домашние </h1>
                                 <div class="about__info__well">Качественно</div>
                             </div> 
@@ -296,7 +312,7 @@
                             </div>                   
                         </div>
                         <div class="about__courses">
-                            <h2 class="about__courses-name">Онлайн - курсы</h2>
+                            <h2 class="about__courses-name" id="color-course">Онлайн - курсы</h2>
                             <div class="about__box">                                
                                 <div class="about__item">
                                     <div class="about__item-img">

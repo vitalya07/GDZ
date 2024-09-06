@@ -157,3 +157,70 @@ policyBack.addEventListener('click', ()=> {
 });
 
 // Смена темы
+
+// 1 открытие окна
+let addtheme = document.getElementById('my-theme');
+let theme = document.getElementById('theme');
+let themeBack = document.querySelector('.theme__back')
+addtheme.addEventListener('click', ()=> {    
+    popupSetting.style.opacity = '0';
+    popupSetting.style.transition = '.12s';
+    popupSetting.style.display = 'none';      
+    theme.classList.add('active'); 
+});
+themeBack.addEventListener('click', ()=> {    
+    popupSetting.style.opacity = '1';
+    popupSetting.style.transition = '.12s';
+    popupSetting.style.display = 'flex';     
+    theme.classList.remove('active');
+});
+// 2 смена темы
+let lightButton = document.getElementById('lightTheme');
+let darkButton = document.getElementById('darkTheme');
+let containerBody = document.getElementById('body-container');
+let header = document.getElementById('header');
+let headerLogoText = document.getElementById('header-logo-text');
+let great = document.querySelector('.about__great');
+let photos = document.querySelectorAll('.about__photo');
+let titleGdz  = document.getElementById('gdz-color');
+let colorCourse  = document.getElementById('color-course');
+let logo = document.getElementById('logo');
+let logoLight = document.getElementById('logo-light');
+// переключение на светлую тему
+lightButton.addEventListener('click', ()=> {
+    containerBody.style.background = '#e0d1f7';
+    header.style.background = '#D0D0D0';
+    headerLogoText.style.color = '#000'
+    great.style.color = '#fff';   
+    photos.forEach(photo => {
+        photo.style.color = '#000'
+    })
+    titleGdz.style.color = '#000';
+    colorCourse.style.color = '#000';
+    logo.style.display = 'none';
+    logoLight.style.display = 'block'
+
+
+    darkButton.classList.remove('active');
+    lightButton.classList.add('active');
+});
+
+
+// переключение на темную тему
+darkButton.addEventListener('click', ()=> {
+    containerBody.style.background = '#3b3041';
+    header.style.background = '#222021';
+    headerLogoText.style.color = '#fff'
+    great.style.color = '#000';   
+    photos.forEach(photo => {
+        photo.style.color = '#fff'
+    })
+    titleGdz.style.color = '#fff';
+    colorCourse.style.color = '#fff';
+
+    logo.style.display = 'block';
+    logoLight.style.display = 'none'
+
+    lightButton.classList.remove('active');
+    darkButton.classList.add('active');
+});

@@ -237,6 +237,9 @@
     .header {
         padding: 15px 0;
         background-color: #222021;
+        &__logo-text {
+            text-shadow: none;
+        }
     }
     .about {
         padding: 12px;
@@ -587,6 +590,7 @@
             height: 20px;
             &-text {
                 font-size: 16px;
+                box-shadow: none;
             }
             &-img {
                 width: 8px;
@@ -958,6 +962,48 @@
             line-height: 15.85px;
             letter-spacing: -0.02em;    
             margin-top: 9px;   
+        }
+    }
+    .theme {
+        &__box {
+            width: 360px;
+            height: 100vh;
+            background: #353130;
+            border-radius: 0;
+        }
+        &__header {
+            border-radius: 0;
+            gap: 66px;
+            padding: 20px 35px;
+        }
+        &__back {
+            width: 20px;
+            height: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24.38px;
+            letter-spacing: -0.02em;
+            text-align: left;            
+        }
+        &__main {
+            padding: 27px 19px;
+        }
+        &__item {
+            width: 321.4px;
+            height: 43.77px;
+            &-text {
+                margin-left: 2px;
+            }
+            &-border {
+                margin-left: 150px;
+            }
+
         }
     }
 }
